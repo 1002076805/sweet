@@ -10,8 +10,8 @@ public class main {
 
     public static void main(String[] args) {
         Division division = new Division();
-        Chocolates chocolates = new Chocolates("Bless",30,5,"3");
-        Biscuits biscuits = new Biscuits("cute",34,56,"8");
+        Chocolates chocolates = new Chocolates("Dove",30,5,"3");
+        Biscuits biscuits = new Biscuits("Cute",34,56,"8");
         division.add(chocolates);
         division.add(biscuits);
 
@@ -20,8 +20,8 @@ public class main {
         DivisionCalculator calculator = new DivisionCalculator();
         double totalWeight =calculator.calculateTotalWeight(division);
         System.out.println("totalWeight = " + totalWeight);
-        System.out.println("ChocolatesType = " + chocolates.getChocolatesType());
         double totalPrice =calculator.calculateTotalPrice(division);
         System.out.println("totalPrice = " + totalPrice);
+
     }
 }
